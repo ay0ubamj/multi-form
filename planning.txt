@@ -1,0 +1,18 @@
+0- Center Body things into middle - Styling Stepper
+DONE
+
+0-1- Create commun component between Pages
+DONE
+
+1- Design Contact page
+	First name, Last name, Email, Birth Date, Country
+DONE
+	
+2- Design About page
+	Text Area where the user can feel free to write
+	
+3- Design Summary
+	A summary of all precedent steps
+	
+--------------------------------
+4- Make logic of each step
