@@ -1,18 +1,12 @@
 import styled from "@emotion/styled";
+import React from "react";
 
 export const FieldSet = ({ label, children }) => (
-  <Container>
+  <React.Fragment>
     {label && <Legend>{label}</Legend>}
     <Wrapper>{children}</Wrapper>
-  </Container>
+  </React.Fragment>
 );
-
-const Container = styled.fieldset`
-  width: 60%;
-  margin: 16px 0;
-  padding: 0;
-  border: none;
-`;
 
 const Wrapper = styled.div`
   width: 100%;

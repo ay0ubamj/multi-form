@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
+import React from "react";
 
-export const Input = ({ type, id, ...props }) => (
-  <StyledInput type={type} id={id} {...props} />
-);
+export const Input = React.forwardRef((props, ref) => {
+  const { type, id, ...otherProps } = props;
+  return <StyledInput type={type} id={id} ref={ref} {...otherProps} />;
+});
 
 const StyledInput = styled.input`
   box-sizing: border-box;

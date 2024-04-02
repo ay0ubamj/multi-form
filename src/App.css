@@ -12,3 +12,10 @@
   justify-content: center;
   gap: 3rem;
 }
+
+.error {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: red;
+  margin-top: 3px;
+}

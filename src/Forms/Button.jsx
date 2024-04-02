@@ -1,11 +1,6 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
 
-export const Button = ({ text, link }) => (
-  <StyledLink to={link}>
-    <StyledButton>{text} </StyledButton>
-  </StyledLink>
-);
+export const Button = ({ text }) => <StyledButton>{text}</StyledButton>;
 
 const StyledButton = styled.button`
   background-color: #4caf50; /* Green */
@@ -24,9 +19,4 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #45a049;
   }
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: white;
 `;
