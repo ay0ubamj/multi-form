@@ -15,10 +15,10 @@ export const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues: appState });
 
   const save = (data) => {
-    // setAppState(data);
+    setAppState(data);
     console.log(data);
   };
 
